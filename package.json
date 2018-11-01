@@ -1,0 +1,17 @@
+{
+  "name": "kangkang-ui",
+  "version": "1.0.0",
+  "description": "kangkang ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\u001b"
+  ],
+  "author": "zxd",
+  "license": "ISC",
+  "__npminstall_done": "Thu Nov 01 2018 14:06:42 GMT+0800 (中国标准时间)",
+  "_from": "kangkang-ui@1.0.0",
+  "_resolved": "http://registry.npm.taobao.org/kangkang-ui/download/kangkang-ui-1.0.0.tgz"
+}
