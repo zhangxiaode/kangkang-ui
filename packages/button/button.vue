@@ -2,9 +2,9 @@
   <button
     :disabled="disabled"
     :class="[
-      'zxd-button',
-      type ? 'zxd-btn-' + type : '',
-      size ? 'zxd-btn-' + size : '',
+      'kk-button',
+      type ? 'kk-btn-' + type : '',
+      size ? 'kk-btn-' + size : '',
       {
         'is-disabled':disabled,
         'is-circle':circle
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Zxd-button',
+  name: 'Kk-button',
   data () {
     return {
     }
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-  .zxd-button{
+  .kk-button{
     position: relative;display: inline-block;height: 32px;line-height: 1;padding: 0 15px;
     text-align: center;white-space: nowrap;font-size: 14px;color: rgba(0,0,0,.65);
     border: 1px solid #d9d9d9;border-radius: 4px;background: none;outline:none;
@@ -57,21 +57,21 @@ export default {
       background-color: #fff;border-color: #40a9ff;
       color: #40a9ff;
     }
-    &.zxd-btn-primary{
+    &.kk-btn-primary{
       background-color: #1890ff;border-color: #1890ff;
       color: #fff;
       &:hover,&:focus{
         background-color: #40a9ff;border-color: #40a9ff;
       }
     }
-    &.zxd-btn-large{
+    &.kk-btn-large{
       font-size: 16px;
       height: 40px;
       &.is-circle{
         border-radius:20px;
       }
     }
-    &.zxd-btn-small{
+    &.kk-btn-small{
       padding: 0 8px;
       font-size: 14px;
       height: 24px;

@@ -40,7 +40,7 @@ data () {
                 },
                 {
                       img: require('@/assets/slideImg4.jpg'),
-                      txt: '效果图4'
+                      txt: '效果图45'
                 }
           ]
     }
