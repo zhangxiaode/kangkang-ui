@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Zxd-slider class="homeSlid" :sliderList="sliderList" effect="left" autoPlay=true vis=6>
-    </Zxd-slider>
+    <Kk-slider class="homeSlid" :sliderList="sliderList" effect="left" autoPlay=true vis=6>
+    </Kk-slider>
   </div>
 </template>
 

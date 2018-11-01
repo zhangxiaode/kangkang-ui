@@ -1,5 +1,5 @@
 <template>
-  <div class="zxd-scroll" ref="zxdScroll">
+  <div class="kk-scroll" ref="kkScroll">
     <div class="scrollWrap" @mouseover="move(false)" @mouseout="move(true)" :style="{width: wrapWidth + 'px', left: lef + 'px'}">
       <div class="scrollItem" ref="scrollItem" v-for="(item,index) in newScrollData" :key="index">
         <img :src="item" alt="">
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'Zxd-scroll',
+  name: 'Kk-scroll',
   data () {
     return {
       wrapWidth: 0,
@@ -24,7 +24,7 @@ export default {
       return this.newScrollData.length
     },
     scrollWidth () {
-      return this.$refs.zxdScroll.offsetWidth
+      return this.$refs.kkScroll.offsetWidth
     }
   },
   props: [ 'scrollData' ],
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-  .zxd-scroll{
+  .kk-scroll{
     position:relative;width:100%;height:100%;
     .scrollWrap{
       height:100%;white-space: nowrap;

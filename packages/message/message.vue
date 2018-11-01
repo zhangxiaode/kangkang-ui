@@ -1,6 +1,6 @@
 <template>
-  <transition name="zxd-fade">
-    <div v-show="showMessage" :class="['zxd-message',type ? `zxd-message-${ type }`:'zxd-message-info']">
+  <transition name="kk-fade">
+    <div v-show="showMessage" :class="['kk-message',type ? `kk-message-${ type }`:'kk-message-info']">
       {{ message }}
     </div>
   </transition>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Zxd-message',
+  name: 'kk-message',
   data () {
     return {
       message: '',

@@ -1,7 +1,7 @@
 <template>
   <transition>
     <div>
-      <Zxd-dialog
+      <Kk-dialog
         :modal="true"
         position="center"
         title="Basic Modal"
@@ -12,10 +12,10 @@
       >
         <span>dialog content</span>
         <span slot="footer" class="dialog-footer">
-          <Zxd-button @click="dialogVisible = false">取 消</Zxd-button>
-          <Zxd-button type="primary" @click="dialogVisible = false">确 定</Zxd-button>
+          <Kk-button @click="dialogVisible = false">取 消</Kk-button>
+          <Kk-button type="primary" @click="dialogVisible = false">确 定</Kk-button>
         </span>
-      </Zxd-dialog>
+      </Kk-dialog>
     </div>
   </transition>
 </template>

@@ -21,7 +21,7 @@ Vue.component(Button.name, Button)
 
 ## slide使用方法
 ``` javascript
-<Zxd-slider class="homeSlid" :sliderList="sliderList" effect="left" autoPlay=true vis=3></Zxd-slider>
+<Kk-slider class="homeSlid" :sliderList="sliderList" effect="left" autoPlay=true vis=3></Kk-slider>
 
 data () {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <div class="zxd-slider" @mouseover="sliderOver" @mouseout="sliderOut">
+  <div class="kk-slider" @mouseover="sliderOver" @mouseout="sliderOut">
     <div class="hd">
       <a class="next"></a>
       <ul>
@@ -27,7 +27,7 @@
 <script>
 let sit
 export default {
-  name: 'Zxd-slider',
+  name: 'Kk-slider',
   data () {
     return {
       sliderIndex: 0,
@@ -39,8 +39,8 @@ export default {
   },
   props: ['sliderList', 'effect', 'autoPlay', 'vis'],
   mounted () {
-    this.bdWidth = document.getElementsByClassName('zxd-slider')[0].clientWidth / this.vis * this.sliderList.length
-    this.leftWidth = -document.getElementsByClassName('zxd-slider')[0].clientWidth / this.vis * this.sliderIndex
+    this.bdWidth = document.getElementsByClassName('kk-slider')[0].clientWidth / this.vis * this.sliderList.length
+    this.leftWidth = -document.getElementsByClassName('kk-slider')[0].clientWidth / this.vis * this.sliderIndex
     sit = setInterval(() => {
       this.moveLeft()
     }, 2000)
@@ -51,7 +51,7 @@ export default {
       if (this.sliderIndex === this.sliderList.length - this.vis + 1) {
         this.sliderIndex = 0
       }
-      this.leftWidth = -document.getElementsByClassName('zxd-slider')[0].clientWidth / this.vis * this.sliderIndex
+      this.leftWidth = -document.getElementsByClassName('kk-slider')[0].clientWidth / this.vis * this.sliderIndex
     },
     sliderOver () {
       clearInterval(sit)

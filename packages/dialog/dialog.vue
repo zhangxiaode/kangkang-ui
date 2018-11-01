@@ -1,16 +1,16 @@
 <template>
-  <div :class="['zxd-dialog', {'show-dialog': visible}]">
-    <div class="zxd-dialog-mask" v-if="modal"></div>
-    <div :class="['zxd-dialog-wrap', position ? 'zxd-dialog-' + position : '']" @click.self="close">
-      <div class="zxd-dialog-modal" :style="{width: width}">
-        <div class="zxd-dialog-title">
+  <div :class="['kk-dialog', {'show-dialog': visible}]">
+    <div class="kk-dialog-mask" v-if="modal"></div>
+    <div :class="['kk-dialog-wrap', position ? 'kk-dialog-' + position : '']" @click.self="close">
+      <div class="kk-dialog-modal" :style="{width: width}">
+        <div class="kk-dialog-title">
           <span>{{ this.title }}</span>
           <i class="close" @click="close"></i>
         </div>
-        <div class="zxd-dialog-body">
+        <div class="kk-dialog-body">
           <slot></slot>
         </div>
-        <div class="zxd-dialog-footer">
+        <div class="kk-dialog-footer">
           <slot name="footer"></slot>
         </div>
       </div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Zxd-dialog',
+  name: 'Kk-dialog',
   data () {
     return {
     }
@@ -61,55 +61,55 @@ export default {
 </script>
 
 <style scoped lang="less">
-.zxd-dialog{
-  .zxd-dialog-mask{
+.kk-dialog{
+  .kk-dialog-mask{
     display:none;
   }
-  .zxd-dialog-wrap{
+  .kk-dialog-wrap{
     opacity: 0;
     transform: scale(0);
   }
   &.show-dialog{
-    .zxd-dialog-mask{
+    .kk-dialog-mask{
       display:block;
     }
-    .zxd-dialog-wrap{
+    .kk-dialog-wrap{
       opacity: 1;
       transform: scale(1);
     }
   }
 }
-.zxd-dialog-mask{
+.kk-dialog-mask{
   position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;
   background:rgba(0,0,0,0.5);
 }
-.zxd-dialog-wrap{
+.kk-dialog-wrap{
   display:flex;justify-content: center;align-items: center;
   position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;
   transform-origin: center center;
   overflow:hidden;
   transition:all .5s;
-  &.zxd-dialog-top{
+  &.kk-dialog-top{
     justify-content: center;align-items: flex-start;
   }
-  &.zxd-dialog-left{
+  &.kk-dialog-left{
     justify-content: flex-start;align-items: center;
   }
-  &.zxd-dialog-bottom{
+  &.kk-dialog-bottom{
     justify-content: center;align-items: flex-end;
   }
-  &.zxd-dialog-right{
+  &.kk-dialog-right{
     justify-content: flex-end;align-items: center;
   }
-  &.zxd-dialog-center{
+  &.kk-dialog-center{
     justify-content: center;align-items: center;
   }
 }
-.zxd-dialog-modal{
+.kk-dialog-modal{
   border-radius:4px;overflow:hidden;background:#fff;
   position: relative;z-index:1001;
   margin:20px;
-  .zxd-dialog-title{
+  .kk-dialog-title{
     padding:16px 24px;
     i.close{
       float:right;
@@ -120,10 +120,10 @@ export default {
       cursor:pointer;
     }
   }
-  .zxd-dialog-body{
+  .kk-dialog-body{
     padding:24px;
   }
-  .zxd-dialog-footer{
+  .kk-dialog-footer{
     padding:10px 16px;
     border-top:solid 1px #e8e8e8;
     text-align:right;

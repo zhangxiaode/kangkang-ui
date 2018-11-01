@@ -1,10 +1,10 @@
 <template>
   <div class="banner">
-    <Zxd-scroll :total="scrollData.length" :scrollData="scrollData">
+    <Kk-scroll :total="scrollData.length" :scrollData="scrollData">
       <div class="scrollItem" v-for="(item,index) in scrollData" :key="index">
         <img :src="item" alt="">
       </div>
-    </Zxd-scroll>
+    </Kk-scroll>
   </div>
 </template>
 
