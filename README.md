@@ -1,6 +1,6 @@
 ## Install
 ```shell
-npm install element-ui -S
+npm install kangkang-ui -S
 ```
 
 ## Quick Start
@@ -40,7 +40,7 @@ data () {
                 },
                 {
                       img: require('@/assets/slideImg4.jpg'),
-                      txt: '效果图45'
+                      txt: '效果图4'
                 }
           ]
     }
