@@ -1,3 +1,6 @@
+## button使用
+
+``` javascript
 <template>
   <transition>
     <div>
@@ -12,15 +15,4 @@
     </div>
   </transition>
 </template>
-
-<script>
-export default {
-  name: 'demo',
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  }
-}
-</script>
+```
