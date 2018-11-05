@@ -2,7 +2,7 @@ import Vue from 'vue'
 import loadingPage from './loading'
 let MessageConstructor = Vue.extend(loadingPage)
 let instance
-const Loading = function (options) {
+const Loading = (options) => {
   instance = new MessageConstructor({data: options})
   document.body.appendChild(instance.$mount().$el)
   // instance.id="id123";

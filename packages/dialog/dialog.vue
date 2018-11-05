@@ -2,7 +2,7 @@
   <div :class="['kk-dialog', {'show-dialog': visible}]">
     <div class="kk-dialog-mask" v-if="modal"></div>
     <div :class="['kk-dialog-wrap', position ? 'kk-dialog-' + position : '']" @click.self="close">
-      <div class="kk-dialog-modal" :style="{width: width}">
+      <div class="kk-dialog-modal" :style="{width}">
         <div class="kk-dialog-title">
           <span>{{ this.title }}</span>
           <i class="close" @click="close"></i>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'Kk-dialog',
+  name: 'Kk-Dialog',
   data () {
     return {
     }
@@ -30,8 +30,14 @@ export default {
       type: String,
       default: 'this is title'
     },
-    visible: Boolean,
-    modal: Boolean,
+    visible: {
+      type: Boolean,
+      default: false
+    },
+    modal: {
+      type: Boolean,
+      default: false
+    },
     position: {
       type: String,
       default: 'center'

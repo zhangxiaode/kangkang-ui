@@ -1,5 +1,5 @@
-import ZxdButton from './button'
-ZxdButton.install = function (Vue) {
-  Vue.component(ZxdButton.name, ZxdButton)
+import KkButton from './button'
+KkButton.install = (Vue) => {
+  Vue.component(KkButton.name, KkButton)
 }
-export default ZxdButton
+export default KkButton

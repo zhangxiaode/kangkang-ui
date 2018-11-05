@@ -1,5 +1,5 @@
-import ZxdDialog from './dialog'
-ZxdDialog.install = function (Vue) {
-  Vue.component(ZxdDialog.name, ZxdDialog)
+import KkDialog from './dialog'
+KkDialog.install = (Vue) => {
+  Vue.component(KkDialog.name, KkDialog)
 }
-export default ZxdDialog
+export default KkDialog
