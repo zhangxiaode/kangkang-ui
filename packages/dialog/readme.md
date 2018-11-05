@@ -27,6 +27,7 @@ export default {
   name: 'demo',
   data () {
     return {
+      dialogVisible: false,
     }
   },
   mounted () {

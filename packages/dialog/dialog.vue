@@ -42,26 +42,26 @@ export default {
       type: String,
       default: 'center'
     },
-    onOk: Function,
-    onCancel: Function,
+    // onOk: Function,
+    // onCancel: Function,
     width: {
       type: String,
       default: 'auto'
     }
   },
-  watch: {
-    visible () {
-    }
-  },
+  // watch: {
+  //   visible () {
+  //   }
+  // },
   mounted () {
   },
   methods: {
     close () {
       this.$emit('update:visible', false)
     },
-    open () {
-      this.$emit('update:visible', true)
-    }
+    // open () {
+    //   this.$emit('update:visible', true)
+    // }
   }
 }
 </script>
@@ -116,6 +116,7 @@ export default {
   position: relative;z-index:1001;
   margin:20px;
   .kk-dialog-title{
+    border-bottom:solid 1px #e8e8e8;
     padding:16px 24px;
     i.close{
       float:right;
@@ -130,11 +131,11 @@ export default {
     padding:24px;
   }
   .kk-dialog-footer{
-    padding:10px 16px;
+    padding:0 16px;
     border-top:solid 1px #e8e8e8;
     text-align:right;
     button{
-      margin:0 5px;
+      margin:10px 5px;
     }
   }
 }
