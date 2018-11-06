@@ -53,7 +53,10 @@ export default {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    vertical-align: middle;
+    vertical-align: -0.125em;
     display: inline-block;
+    &:before{
+      float:left;width:100%;height:100%;line-height:1;
+    }
   }
 </style>
