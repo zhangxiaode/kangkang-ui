@@ -1,5 +1,5 @@
 import Scroll from './scroll'
-Scroll.install = function (Vue) {
+Scroll.install = (Vue) => {
   Vue.component(Scroll.name, Scroll)
 }
 export default Scroll
